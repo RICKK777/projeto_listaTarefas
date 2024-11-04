@@ -16,11 +16,15 @@ namespace Projeto_Sistema_de_Gestão_de_Tarefas
 
             while(true)
             {
-                Console.WriteLine("Escolha a uma opção");
-                Console.WriteLine("A - adiconar tarefa");
-                Console.WriteLine("L - listar tarefa");
-                Console.WriteLine("E - excluir tarefa");
-                Console.WriteLine("F - fechar o programa");
+                Console.WriteLine("|=====================|\n");
+                Console.WriteLine("|  ESCOLHA UMA OPÇÃO  |");
+                Console.WriteLine("|=====================|\n");
+                Console.WriteLine("|A - ADICIONAR TAREFA |");
+                Console.WriteLine("|L - LISTAR TAREFA    |");
+                Console.WriteLine("|E - EXCLUIR TAREFA   |");
+                Console.WriteLine("|F - FECHAR PROGRAMA  |");
+                Console.WriteLine("|=====================|\n");
+
 
                 var escolha = Console.ReadLine();
                 Console.Clear();
@@ -43,9 +47,15 @@ namespace Projeto_Sistema_de_Gestão_de_Tarefas
                 else if (escolha.ToUpper() == "L")
                 {
 
+
                 }
                 else if (escolha.ToUpper() == "E")
                 {
+                    int excluir;
+
+                    Console.WriteLine("Escolha uma tarefa para excluir: ");
+                    excluir = int.Parse(Console.ReadLine());
+
 
                 }
                 else if(escolha.ToUpper() == "F")
